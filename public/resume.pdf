@@ -1,0 +1,103 @@
+%PDF-1.7
+1 0 obj
+<</Type /Catalog /Pages 2 0 R>>
+endobj
+2 0 obj
+<</Type /Pages /Kids [3 0 R] /Count 1>>
+endobj
+3 0 obj
+<</Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 6 0 R>>
+endobj
+4 0 obj
+<</Font <</F1 5 0 R>>>>
+endobj
+5 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica>>
+endobj
+6 0 obj
+<</Length 1836>>
+stream
+BT
+/F1 24 Tf
+50 700 Td
+(Full Stack Developer) Tj
+/F1 12 Tf
+0 -30 Td
+(Email: hello@example.com) Tj
+0 -20 Td
+(Location: San Francisco, CA) Tj
+0 -20 Td
+(GitHub: github.com/username) Tj
+
+0 -40 Td
+/F1 16 Tf
+(Professional Experience) Tj
+/F1 12 Tf
+0 -20 Td
+(Senior Full Stack Developer - Tech Innovations Inc.) Tj
+0 -15 Td
+(2023 - Present) Tj
+0 -15 Td
+• Leading development of enterprise-scale web applications Tj
+0 -15 Td
+• Mentoring junior developers and implementing best practices Tj
+
+0 -25 Td
+(Full Stack Developer - Digital Solutions Ltd) Tj
+0 -15 Td
+(2021 - 2023) Tj
+0 -15 Td
+• Developed and maintained multiple client projects Tj
+0 -15 Td
+• Implemented CI/CD pipelines and improved performance Tj
+
+0 -25 Td
+(Frontend Developer - WebTech Solutions) Tj
+0 -15 Td
+(2019 - 2021) Tj
+0 -15 Td
+• Built responsive web applications using React and Vue.js Tj
+
+0 -40 Td
+/F1 16 Tf
+(Skills) Tj
+/F1 12 Tf
+0 -20 Td
+(Frontend: React, TypeScript, JavaScript, Next.js, Vue.js) Tj
+0 -15 Td
+(Backend: Node.js, Express, GraphQL, Python) Tj
+0 -15 Td
+(Databases: MongoDB, PostgreSQL) Tj
+
+0 -40 Td
+/F1 16 Tf
+(Education) Tj
+/F1 12 Tf
+0 -20 Td
+(B.Tech in Computer Science - Technical University) Tj
+0 -15 Td
+(2015 - 2019) Tj
+
+0 -40 Td
+/F1 16 Tf
+(Certifications) Tj
+/F1 12 Tf
+0 -20 Td
+(AWS Certified Solutions Architect - 2023) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f
+0000000009 00000 n
+0000000056 00000 n
+0000000111 00000 n
+0000000209 00000 n
+0000000247 00000 n
+0000000315 00000 n
+trailer
+<</Size 7 /Root 1 0 R>>
+startxref
+2202
+%%EOF

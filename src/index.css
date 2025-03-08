@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 187 134 252;
+    --color-secondary: 3 218 198;
+    --color-accent: 236 72 153;
+    --color-background: 18 18 18;
+    --color-foreground: 255 255 255;
+  }
+
+  body {
+    @apply bg-material-dark-bg text-material-dark-onBg;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 rounded-md font-medium transition-all duration-200 inline-flex items-center gap-2;
+  }
+
+  .btn-primary {
+    @apply bg-material-dark-primary text-material-dark-onBg hover:bg-opacity-90;
+  }
+
+  .btn-outline {
+    @apply border-2 border-material-dark-primary text-material-dark-primary hover:bg-material-dark-primary/10;
+  }
+
+  .card {
+    @apply bg-material-dark-surface rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+  }
+
+  .nav-link {
+    @apply relative px-3 py-2 text-material-dark-onBg/80 hover:text-material-dark-onBg transition-colors duration-200;
+  }
+
+  .nav-link.active {
+    @apply text-material-dark-primary;
+  }
+
+  .nav-link.active::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-material-dark-primary rounded-full;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-material-dark-surface;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-material-dark-elevated rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-material-dark-primary/50;
+}
