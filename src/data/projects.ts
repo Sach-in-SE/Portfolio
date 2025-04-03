@@ -18,6 +18,38 @@ export const projects: Project[] = [
     }
   },
   {
+    id: 'qrcodegenerator',
+    title: 'QR Code Generator',
+    description: 'A simple and efficient tool to generate custom QR codes for various use cases, built with React and Node.js.',
+    image: 'https://img.freepik.com/free-photo/illustration-qr-quick-response-code-application_53876-124202.jpg?t=st=1743721818~exp=1743725418~hmac=3a806c17b13a0ea1db444a814ab94d108c040ff2dc31d3fbeaa9e8d8d69f286d&w=740',
+    tags: ['React', 'Node.js', 'Express', 'JavaScript'],
+    demoUrl: 'https://gen-ur-qr.vercel.app/',
+    githubUrl: 'https://github.com/Sach-in-SE/QR-Code-Generator',
+    featured: true,
+    category: 'web',
+    caseStudy: {
+      problem: 'Generating custom QR codes with complex data was cumbersome and inefficient using traditional methods.',
+      solution: 'Developed an intuitive web app using React and Node.js to allow users to quickly generate custom QR codes with dynamic data inputs.',
+      outcome: 'Improved user experience, reduced QR code generation time by 50%, and increased user engagement by 25%.'
+    }
+  },
+  {
+    id: 'multitoolapp',
+    title: 'Multi Tool App',
+    description: 'A versatile app with multiple useful tools: Age Calculator, BMI Calculator, Word Counter, Percentage Calculator, and Image to PDF Converter.',
+    image: 'https://img.freepik.com/free-photo/people-showing-phone-with-applications_53876-88439.jpg?ga=GA1.1.1073523380.1743721396&semt=ais_hybrid&w=740',
+    tags: ['React', 'JavaScript'],
+    demoUrl: 'https://multi2l.netlify.app/',
+    githubUrl: 'https://github.com/Sach-in-SE/Multi-Tool',
+    featured: true,
+    category: 'web',
+    caseStudy: {
+      problem: 'Users often need access to multiple tools for everyday tasks like calculating age, BMI, percentages, counting words, and converting images to PDFs.',
+      solution: 'Developed a single app combining these tools into one convenient, easy-to-use interface.',
+      outcome: 'Increased user convenience, saving time by providing all necessary tools in one place, improving overall productivity and user engagement.'
+    }
+  },  
+  {
     id: 'ai-image-generator',
     title: 'AI Image Generator',
     description: 'A web application that generates images from text descriptions using AI.',

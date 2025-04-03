@@ -16,51 +16,27 @@ const Footer: React.FC = () => {
         }} />
       </div>
 
-      <div className="container mx-auto px-4 py-16 relative">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {/* About Section */}
-          <div className="backdrop-blur-sm rounded-2xl p-6">
-            <div className="flex items-center gap-2 font-bold text-xl mb-4">
+      <div className="container mx-auto px-4 relative">
+        <div className="flex flex-col lg:flex-row justify-between gap-5">
+          <div className="backdrop-blur-sm rounded-2xl px-6 pt-6">
+            <div className="flex items-center gap-2 font-bold text-xl mb-2">
               <Code className="text-material-dark-primary" size={24} />
               <span>Sachin Kumar</span>
             </div>
-            <p className="text-material-dark-onBg/70 mb-6">
+            <p className="text-material-dark-onBg/70 ">
               Thank you for visiting! Let's connect and create something amazing.
               Explore my work or reach out for collaborations.
             </p>
           </div>
-
-          {/* Quick Links */}
-          <div className="backdrop-blur-sm  rounded-2xl p-6">
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-3">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
-                <li key={item}>
-                  <Link
-                    to={item.toLowerCase()}
-                    smooth={true}
-                    duration={800}
-                    className="text-material-dark-onBg/70 hover:text-material-dark-primary transition-colors duration-300 flex items-center gap-2 group cursor-pointer"
-                  >
-                    <span className="h-px w-4 bg-material-dark-onBg/30 group-hover:w-6 group-hover:bg-material-dark-primary transition-all duration-300" />
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact Information */}
-          <div className="backdrop-blur-sm  rounded-2xl p-6 sm:col-span-2 lg:col-span-1">
-            <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
+          <div className="backdrop-blur-sm rounded-2xl p-6 sm:col-span-2 lg:col-span-1">
+            <h3 className="text-lg font-semibold">Contact Information</h3>
             <div className="space-y-4 text-material-dark-onBg/70">
-              <p className="break-words">sachingdsc01@gmail.com</p>
-              <p>Location: Bareilly, Uttar Pradesh (India)</p>
-              <div className="flex flex-wrap gap-3 mt-6">
+              <div className="flex flex-wrap gap-3 mt-4">
                 {[
                   { icon: <Github size={20} />, url: 'https://github.com/Sach-in-SE', label: 'GitHub' },
                   { icon: <Linkedin size={20} />, url: 'https://linkedin.com/in/username', label: 'LinkedIn' },
-                  { icon: <Mail size={20} />, url: 'mailto:sachingdsc01@gmail.com', label: 'Email' },
+                  { icon: <Mail size={20} />, url: 'mailto:codersachin01@gmail.com', label: 'Email' },
                   { icon: <Instagram size={20} />, url: 'https://www.instagram.com/official__luc_ky/', label: 'Instagram' },
                   { icon: <Discord size={20} />, url: 'https://discord.com/app', label: 'Discord' }
                 ].map((social, index) => (
@@ -79,9 +55,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-
         {/* Footer Bottom */}
-        <div className="mt-12 pt-8 border-t border-material-dark-onBg/10">
+        <div className=" pt-4 border-t border-material-dark-onBg/10">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-material-dark-onBg/70 text-sm flex items-center">
               © {currentYear} Made with <Heart size={14} className="mx-1 text-material-dark-error" /> by Sachin Kumar
