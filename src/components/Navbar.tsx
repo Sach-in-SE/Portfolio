@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
           className="flex items-center gap-2 font-bold text-xl cursor-pointer"
         >
           <Code className="text-material-dark-primary" size={24} />
-          <span className="hidden sm:inline">Developer</span>
+          <span className="hidden sm:inline">Sachin Kumar</span>
         </ScrollLink>
 
         <div className="hidden md:flex items-center gap-6">
