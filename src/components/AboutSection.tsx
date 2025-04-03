@@ -92,84 +92,36 @@ const AboutSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="mb-16">
+          <div className="mb-16" id="skills">
             <h3 className="text-2xl font-bold mb-6 text-material-dark-primary">Skills & Technologies</h3>
-            
-            <div className="flex flex-wrap gap-2 mb-6">
-              {categories.map((category) => (
-                <button
-                  key={category.value}
-                  onClick={() => setActiveCategory(category.value as SkillCategory | 'all')}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-                    activeCategory === category.value
-                      ? 'bg-material-dark-primary text-material-dark-onPrimary'
-                      : 'bg-material-dark-elevated text-material-dark-onBg/75 hover:bg-material-dark-elevated/80'
-                  }`}
-                >
-                  {category.label}
-                </button>
-              ))}
-            </div>
-            
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              {filteredSkills.map((skill) => (
-                <div
-                  key={skill.name}
-                  className="bg-material-dark-elevated p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200 flex flex-col items-center"
-                >
-                  <div className="w-12 h-12 flex items-center justify-center mb-2">
-                    <div className="w-10 h-10 rounded-full bg-material-dark-primary/20 flex items-center justify-center text-material-dark-primary">
-                      {skill.name.charAt(0)}
-                    </div>
-                  </div>
-                  <h4 className="font-medium text-center mb-2 text-material-dark-onBg">{skill.name}</h4>
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        size={16}
-                        className={`${
-                          i < skill.level 
-                            ? 'text-material-dark-secondary fill-material-dark-secondary' 
-                            : 'text-material-dark-onBg/30'
-                        }`}
-                      />
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          <div>
-            <h3 className="text-2xl font-bold mb-6 text-material-dark-primary">Experience</h3>
-            
-            <div className="relative">
-              <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-material-dark-elevated"></div>
-              
-              <div className="space-y-8">
-                {timeline.map((item, index) => (
-                  <div
-                    key={item.id}
-                    className={`relative flex flex-col md:flex-row ${
-                      index % 2 === 0 ? 'md:flex-row-reverse' : ''
-                    }`}
-                  >
-                    <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-material-dark-primary border-4 border-material-dark-surface"></div>
-                    
-                    <div className="ml-6 md:ml-0 md:w-1/2 md:px-8">
-                      <div className="bg-material-dark-elevated p-4 rounded-lg shadow-lg">
-                        <div className="flex items-center mb-2">
-                          {getIconForTimelineItem(item.type)}
-                          <h4 className="text-lg font-bold ml-2 text-material-dark-onBg">{item.title}</h4>
-                        </div>
-                        <p className="text-sm text-material-dark-onBg/75 mb-1">
-                          {item.organization} | {item.date}
-                        </p>
-                        <p className="text-sm text-material-dark-onBg/90">{item.description}</p>
-                      </div>
-                    </div>
-                  </div>
+            <div className="pb-11" id="skill">
+              <p className="font-thin text-center text-xl md:text-2xl p-5 text-white">
+                The skill, tools and technology I use:
+              </p>
+              <div className="flex flex-wrap gap-5 overflow-visible justify-center">
+                {[
+                  { id: 1, class: "fa-brands fa-java", color: "#007396" },
+                  { id: 2, class: "fa-brands fa-js", color: "#F7DF1E" },
+                  { id: 3, class: "fa-brands fa-html5", color: "#E34F26" },
+                  { id: 4, class: "fa-brands fa-css3-alt", color: "#1572B6" },
+                  { id: 5, class: "fa-brands fa-python", color: "#3776AB" },
+                  { id: 6, class: "fa-solid fa-c", color: "#777BB4" },
+                  { id: 7, class: "fa-brands fa-react", color: "#61DAFB" },
+                  { id: 8, class: "fa-brands fa-bootstrap", color: "#7952B3" },
+                  { id: 9, class: "fa-brands fa-node", color: "#339933" },
+                  { id: 10, class: "fa-brands fa-git", color: "#F05032" },
+                  { id: 11, class: "fa-brands fa-github", color: "#ffffff" },
+                  { id: 12, class: "fa-solid fa-database", color: "#777BB4" },
+                ].map((skill, index) => (
+                  <motion.div
+                    key={skill.id}
+                    className={`${skill.class} text-3xl md:text-6xl md:m-2`}
+                    style={{ color: skill.color }}
+                    initial={{ x: -50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: false, amount: 0.1 }}
+                    transition={{ duration: 0.6, delay: index * 0.2 }}
+                  />
                 ))}
               </div>
             </div>

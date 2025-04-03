@@ -15,7 +15,7 @@ const ProjectsSection: React.FC = () => {
   const categories: { value: ProjectCategory; label: string }[] = [
     { value: 'all', label: 'All Projects' },
     { value: 'web', label: 'Web Apps' },
-    { value: 'mobile', label: 'Mobile' },
+   
     { value: 'open-source', label: 'Open Source' },
     { value: 'ai', label: 'AI & ML' },
   ];

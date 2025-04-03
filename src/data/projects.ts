@@ -45,29 +45,7 @@ export const projects: Project[] = [
     featured: false,
     category: 'open-source'
   },
-  
-  {
-    id: 'devops-dashboard',
-    title: 'DevOps Dashboard',
-    description: 'A centralized dashboard for monitoring CI/CD pipelines and infrastructure.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
-    tags: ['React', 'Node.js', 'Docker', 'Kubernetes', 'Prometheus'],
-    demoUrl: 'https://devops-dashboard.dev',
-    githubUrl: 'https://github.com/username/devops-dashboard',
-    featured: true,
-    category: 'web'
-  },
-  {
-    id: 'language-learning-app',
-    title: 'Language Learning App',
-    description: 'A mobile application for learning new languages through interactive exercises.',
-    image: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
-    tags: ['Flutter', 'Firebase', 'ML Kit', 'i18n'],
-    demoUrl: 'https://language-app.dev',
-    githubUrl: 'https://github.com/username/language-learning-app',
-    featured: false,
-    category: 'mobile'
-  },
+
   {
     id: 'lucky-assistant',
     title: 'Lucky Assistant',
