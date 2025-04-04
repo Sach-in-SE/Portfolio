@@ -9,7 +9,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/username',
+    url: 'https://www.linkedin.com/in/sachin-kumar-08b390359',
     icon: 'linkedin',
     color: '#0A66C2'
   },
@@ -31,10 +31,4 @@ export const socialLinks: SocialLink[] = [
     icon: 'instagram',
     color: '#E4405F'
   },
-  {
-    name: 'Google Dev',
-    url: 'https://developers.google.com/profile/u/101282811271903194130',
-    icon: 'Google',
-    color: '#333333'
-  }
 ];
