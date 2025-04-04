@@ -68,7 +68,7 @@ const ContactSection: React.FC = () => {
     {
       icon: <Linkedin size={20} />,
       label: 'LinkedIn',
-      link: 'https://linkedin.com/in/username',
+      link: 'https://www.linkedin.com/in/sachin-kumar-08b390359/',
       color: 'hover:bg-blue-600'
     },
     {
