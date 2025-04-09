@@ -2,13 +2,13 @@ import { Project } from '../types';
 
 export const projects: Project[] = [
   {
-    id: 'nextcommerce',
-    title: 'NextCommerce',
+    id: 'shopkart',
+    title: 'ShopKart',
     description: 'A scalable e-commerce platform built with React, Next.js, and Stripe integration.',
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
     tags: ['React', 'Next.js', 'Node.js', 'Stripe', 'MongoDB'],
-    demoUrl: 'https://ecommerce-demo.dev',
-    githubUrl: 'https://github.com/username/ecommerce-platform',
+    demoUrl: 'https://shopkart-shop.vercel.app/',
+    githubUrl: 'https://github.com/Sach-in-SE/ShopKart',
     featured: true,
     category: 'web',
     caseStudy: {
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
     tags: ['React', 'TypeScript', 'Storybook', 'Jest', 'a11y'],
     demoUrl: 'https://component-library.dev',
-    githubUrl: 'https://github.com/username/react-component-library',
+    githubUrl: 'https://github.com/Sach-in-SE/CodePedia',
     featured: false,
     category: 'open-source'
   },
