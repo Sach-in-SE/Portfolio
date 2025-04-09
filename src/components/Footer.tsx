@@ -35,10 +35,9 @@ const Footer: React.FC = () => {
               <div className="flex flex-wrap gap-3 mt-4">
                 {[
                   { icon: <Github size={20} />, url: 'https://github.com/Sach-in-SE', label: 'GitHub' },
-                  { icon: <Linkedin size={20} />, url: 'https://linkedin.com/in/username', label: 'LinkedIn' },
+                  { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/sachin-kumar-08b390359/', label: 'LinkedIn' },
                   { icon: <Mail size={20} />, url: 'mailto:codersachin01@gmail.com', label: 'Email' },
-                  { icon: <Instagram size={20} />, url: 'https://www.instagram.com/official__luc_ky/', label: 'Instagram' },
-                  { icon: <Discord size={20} />, url: 'https://discord.com/app', label: 'Discord' }
+                  { icon: <Instagram size={20} />, url: 'https://www.instagram.com/official__luc_ky/', label: 'Instagram' }
                 ].map((social, index) => (
                   <a
                     key={index}
