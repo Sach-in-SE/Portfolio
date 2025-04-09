@@ -47,8 +47,8 @@ const ContactSection: React.FC = () => {
     {
       icon: <Phone size={20} />,
       label: 'Phone',
-      value: '+91 123-456-7890',
-      link: 'tel:+911234567890'
+      value: '+91 975-993-8908',
+      link: 'tel:+919759938908'
     },
     {
       icon: <MapPin size={20} />,
