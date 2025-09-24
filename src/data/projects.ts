@@ -67,13 +67,13 @@ export const projects: Project[] = [
   },
  
   {
-    id: 'codepedia',
-    title: 'Code Pedia',
-    description: 'A Comprehensive Documentaion for All Programming Languages,Frameworks, and Libraries in one place .',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
-    tags: ['React', 'TypeScript', 'Storybook', 'Jest', 'a11y'],
-    demoUrl: 'https://component-library.dev',
-    githubUrl: 'https://github.com/Sach-in-SE/CodePedia',
+    id: 'mandi_on_wheel',
+    title: 'Mandi_On_Wheel',
+    description: 'A web-based platform that helps street food vendors source fresh and affordable raw materials directly from trusted local suppliers.',
+    image: 'https://www.freepik.com/free-vector/farmers-market-with-happy-buyer-vendors-outdoor-grocery-shopping-organic-nutrition-natural-products-fresh-fruits-vegetables-meat-sale-business_27399029.htm#fromView=keyword&page=1&position=6&uuid=2b8dfe6a-ab34-42f5-9b87-2202897f1dc8&query=Vendor',
+    tags: ['React 18 + TypeScript', 'Tailwind CSS', 'Lucide React'],
+    demoUrl: 'https://mandi-on-wheel.vercel.app/',
+    githubUrl: 'https://github.com/Sach-in-SE/MandiOnWheel',
     featured: false,
     category: 'open-source'
   },
@@ -84,8 +84,8 @@ export const projects: Project[] = [
     description: 'An AI-powered chatbot for customer service and support automation.',
     image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
     tags: ['React', 'Node.js', 'NLP', 'Machine Learning'],
-    demoUrl: 'https://lucky-assistant.netlify.app/',
-    githubUrl: 'https://github.com/Sachin-Kumar-007/lucky-assistant',
+    demoUrl: 'https://lucky-chatbot.netlify.app/',
+    githubUrl: 'https://github.com/Sach-in-SE/Lucky-Chatbot',
     featured: false,
     category: 'ai'
   }
