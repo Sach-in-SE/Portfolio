@@ -82,7 +82,7 @@ export const projects: Project[] = [
     id: 'lucky-assistant',
     title: 'Lucky Assistant',
     description: 'An AI-powered chatbot for customer service and support automation.',
-    image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80',
+    image: 'https://www.istockphoto.com/photo/street-vegetable-seller-showing-mobile-phone-gm1280995985-379150849',
     tags: ['React', 'Node.js', 'NLP', 'Machine Learning'],
     demoUrl: 'https://lucky-chatbot.netlify.app/',
     githubUrl: 'https://github.com/Sach-in-SE/Lucky-Chatbot',
