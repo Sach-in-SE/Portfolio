@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Send, Github, Linkedin, Mail, MapPin, Phone, Instagram, Facebook } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -52,6 +51,9 @@ const ContactSection: React.FC = () => {
     
     submitForm();
   };
+
+  // Add missing import
+  const { supabase } = require('../lib/supabase');
 
   const contactInfo = [
     {
