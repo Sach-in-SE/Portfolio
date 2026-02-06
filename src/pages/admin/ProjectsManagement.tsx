@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../../lib/supabase';
-import { Plus, Edit, Trash2, Save, X, ExternalLink, Github } from 'lucide-react';
+import { Plus, CreditCard as Edit, Trash2, Save, X, ExternalLink, Github } from 'lucide-react';
 import { Project } from '../../types';
 
 const ProjectsManagement: React.FC = () => {
