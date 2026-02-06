@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { projects } from '../data/projects';
+import { useProjects } from '../hooks/useProjects';
 import ProjectCard from './ProjectCard';
 import { ProjectCategory } from '../types';
 
 const ProjectsSection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>('all');
+  const { projects, loading } = useProjects();
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -74,11 +75,17 @@ const ProjectsSection: React.FC = () => {
             ))}
           </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
+          {loading ? (
+            <div className="text-center py-8 text-gray-600 dark:text-gray-300">
+              Loading projects...
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredProjects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          )}
         </motion.div>
       </div>
     </section>

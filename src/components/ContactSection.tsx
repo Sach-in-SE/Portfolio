@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Send, Github, Linkedin, Mail, MapPin, Phone, Instagram, Facebook } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +27,30 @@ const ContactSection: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    setTimeout(() => {
+    // Submit to database
+    const submitForm = async () => {
+      try {
+        const { error } = await supabase
+          .from('contact_submissions')
+          .insert([formData]);
+        
+        if (error) throw error;
+        
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('Failed to send message. Please try again.');
+      } finally {
+        setIsSubmitting(false);
+      }
+    };
+    
+    submitForm();
       setIsSubmitting(false);
       setIsSubmitted(true);
       setFormData({ name: '', email: '', subject: '', message: '' });

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import { Menu, X, Code } from 'lucide-react';
+import { Menu, X, Code, Settings } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,6 +67,13 @@ const Navbar: React.FC = () => {
               {link.name}
             </ScrollLink>
           ))}
+          <a
+            href="/admin"
+            className="p-2 rounded-full bg-material-dark-primary/10 hover:bg-material-dark-primary/20 text-material-dark-primary transition-colors duration-200"
+            title="Admin Panel"
+          >
+            <Settings size={18} />
+          </a>
         </div>
 
         <button
